@@ -54,19 +54,8 @@ tc = [
 test.it("Sample tests")
 for arr, m, res in tc:
     test.assert_equals(product_sum(arr,m), res, 'Wrong Value')
-"""
-import math
 
 
-def product_sum(a, m):
-    # Rekursionsanker bestimmen
-    if (len(a) == m):
-        return math.prod(a)
-
-    else:
-        for i in range (len(a)):
-
-"""
 Test ([1,7,6,10,21,5,9,8,5,4], 2, 2469),
 
 a = [1,7,6,10,21,5,9,8,5,4]
@@ -76,6 +65,14 @@ test = [math.prod(subset[i]) for i in range(len(subset))]
 res = sum(test)
 
 """
+
+import math
+
+
+def product_sum(a, m):
+    # Rekursionsanker bestimmen
+    if (len(a) == m):
+        return math.prod(a)
 
 print(product_sum([1, 2, 3, 4], 2))
 
